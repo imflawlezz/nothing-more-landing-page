@@ -5,7 +5,7 @@
 **Down there you can check out my projects and source code**  
 
 ---
-1. [Nothing More Project](https://imflawlezz.github.io/NothingMore_Project/index.html) (Work in progress)
+- [Nothing More Project](https://imflawlezz.github.io/NothingMore_Project/index.html) (Work in progress)
 ---
 ### So far that's all, stay tuned for updates
 
