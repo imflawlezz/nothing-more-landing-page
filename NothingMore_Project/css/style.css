@@ -216,7 +216,7 @@ section {
   background-color: #242424;
   background-blend-mode: multiply;
   background-size: cover;
-  border-radius: 1rem;
+  border-radius: 0;
   border: 1px solid #cf2e2e;
   -webkit-box-shadow: 0 0 2rem #8d2120;
           box-shadow: 0 0 2rem #8d2120;
