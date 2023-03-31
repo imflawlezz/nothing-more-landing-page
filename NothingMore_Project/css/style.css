@@ -30,6 +30,8 @@ a:focus {
   background-color: #b72b29;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  -webkit-box-shadow: 0 0 0.5rem #cc302e;
+          box-shadow: 0 0 0.5rem #cc302e;
 }
 body {
   background-color: #171717;
@@ -46,55 +48,12 @@ section {
   text-align: center;
 }
 /* Main */
-.releases-block {
-  text-align: center;
-  display: inline-block;
-  font-family: 'Termina Regular', sans-serif;
-  margin: 0.5rem 1rem;
-}
-.releases-link {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  color: #d4413f;
-  background-color: #1f1f1f;
-  padding: 2rem;
-  border-radius: 1rem;
-}
-.releases-link:hover {
-  background-color: #242424;
-  color: #e0e0e0;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-box-shadow: 0 0 0.5rem #cc302e;
-          box-shadow: 0 0 0.5rem #cc302e;
-}
-.releases-img {
-  display: inline-block;
-}
-.releases-img img {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  border-radius: 1rem;
-}
-.releases-subtitle {
-  font-size: 1rem;
-  margin: 1rem 0;
-  font-family: 'Termina Bold', sans-serif;
-}
-.releases-info {
-  text-align: left;
-  font-size: 1rem;
-  font-family: 'Termina Light', sans-serif;
-}
 .main {
   padding: 2rem 0 4rem;
   background: #3d3d3d url(../img/main-bg.jpg) center 0 no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
   /* Main Form */
-  /* Media */
 }
 .main-content {
   margin-top: 10rem;
@@ -146,6 +105,14 @@ section {
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
 }
+.main #more:hover {
+  background-color: #ba2929;
+  color: #d3d3d3;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-shadow: 0 0 0.5rem #cc302e;
+          box-shadow: 0 0 0.5rem #cc302e;
+}
 .main-form {
   font-family: 'Termina Light', sans-serif;
   background-color: #171717;
@@ -166,6 +133,12 @@ section {
   background-color: #171717;
   color: #d4413f;
 }
+.main-form-input:focus {
+  -webkit-box-shadow: 0 0 1rem #cc302e;
+          box-shadow: 0 0 1rem #cc302e;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
 .main-form-btn {
   font-size: 1.2rem;
   padding: 1rem;
@@ -180,26 +153,28 @@ section {
   color: #e0e0e0;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  -webkit-box-shadow: 0 0 1rem #cc302e;
+          box-shadow: 0 0 1rem #cc302e;
 }
 .main-form small {
   display: block;
   margin-top: 1rem;
   font-size: 0.7rem;
 }
-.main .header {
+.header {
   height: 6rem;
 }
-.main .wrap {
+.wrap {
   display: table;
   width: 100%;
   height: 6rem;
 }
-.main .wrap-block {
+.wrap-block {
   display: table-cell;
   vertical-align: middle;
   text-align: right;
 }
-.main .preorder_link {
+.preorder_link {
   display: inline-block;
   font-family: 'Termina Bold', sans-serif;
   font-weight: 900;
@@ -209,7 +184,7 @@ section {
   text-decoration: none;
   color: #d4413f;
 }
-.main .preorder_link::after {
+.preorder_link::after {
   width: 100%;
   background-color: #d4413f;
   content: '';
@@ -226,36 +201,169 @@ section {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
-.main .preorder_link:hover::after {
+.preorder_link:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
 }
+.preorder_link:hover {
+  color: #d4413f;
+}
+/* Modal window */
+.modal-content {
+  background-image: url(../img/bg-2.jpg);
+  background-color: #242424;
+  background-blend-mode: multiply;
+  background-size: cover;
+  border-radius: 1rem;
+  border: 1px solid #cf2e2e;
+  -webkit-box-shadow: 0 0 2rem #8d2120;
+          box-shadow: 0 0 2rem #8d2120;
+}
+.modal-header {
+  border: none;
+}
+.modal-footer {
+  border: none;
+}
+.modal-footer small {
+  font-family: 'Termina Regular', sans-serif;
+  font-size: 0.8rem;
+}
+.modal-title {
+  font-family: 'Termina Bold', sans-serif;
+  margin: 0 0 0 1rem;
+}
+.btn-close {
+  background-color: #d4413f;
+}
+/* Event info */
+.event {
+  text-align: left;
+  display: inline-block;
+}
+.event-header {
+  font-family: 'Termina Bold', sans-serif;
+  font-size: 1.5;
+  margin-bottom: 2rem;
+}
+.event-info {
+  font-family: 'Termina Light', sans-serif;
+  font-size: 1.2rem;
+}
+/* Modal form */
+.modal-form {
+  display: inline-block;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #171717;
+  opacity: 0.8;
+}
+.modal-form-header {
+  font-size: 2rem;
+  text-align: right;
+  font-family: 'Termina Regular', sans-serif;
+}
+.modal-form-input {
+  font-family: 'Termina Regular', sans-serif;
+  display: inline-block;
+  border: 1px solid #cf2e2e;
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.7rem 0;
+  background-color: #171717;
+  color: #d4413f;
+}
+.modal-form-input:focus {
+  -webkit-box-shadow: 0 0 1rem #cc302e;
+          box-shadow: 0 0 1rem #cc302e;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.modal-form-btn {
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid #d4413f;
+  color: #d4413f;
+  width: 50%;
+}
+.modal-form-btn:hover {
+  background-color: #d4413f;
+  border: 1px solid #d4413f;
+  color: #e0e0e0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+/* Releases */
+.releases-block {
+  text-align: center;
+  display: inline-block;
+  font-family: 'Termina Regular', sans-serif;
+  margin: 0.5rem 1rem;
+}
+.releases-link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #d4413f;
+  background-color: #1f1f1f;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.releases-link:hover {
+  background-color: #242424;
+  color: #e0e0e0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-shadow: 0 0 0.5rem #cc302e;
+          box-shadow: 0 0 0.5rem #cc302e;
+}
+.releases-img {
+  display: inline-block;
+}
+.releases-img img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  border-radius: 1rem;
+}
+.releases-subtitle {
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-family: 'Termina Bold', sans-serif;
+}
+.releases-info {
+  text-align: left;
+  font-size: 1rem;
+  font-family: 'Termina Light', sans-serif;
+}
+/* Media */
 @media (max-width: 575px) {
-  .main .header {
+  .header {
     text-align: center;
   }
-  .main .wrap-block {
+  .wrap-block {
     text-align: center;
   }
-  .main .main-content {
+  .main-content {
     margin-top: 12rem;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main .logo {
+  .logo {
     text-align: center;
     margin-bottom: 1rem;
   }
-  .main .preorder_link {
+  .preorder_link {
     text-align: center;
     margin: 0 5%;
     width: 90%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .main .header-btn {
+  .header-btn {
     padding: 1rem 1rem;
   }
 }
