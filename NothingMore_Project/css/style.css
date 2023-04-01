@@ -216,6 +216,7 @@ section {
   background-color: #242424;
   background-blend-mode: multiply;
   background-size: cover;
+  background-position: center center;
   border-radius: 0;
   border: 1px solid #cf2e2e;
   -webkit-box-shadow: 0 0 2rem #8d2120;
@@ -238,17 +239,17 @@ section {
 .btn-close {
   background-color: #d4413f;
 }
-/* Event info */
-.event {
+/* Maintenance info */
+.maintenance {
   text-align: left;
   display: inline-block;
 }
-.event-header {
+.maintenance-header {
   font-family: 'Termina Bold', sans-serif;
   font-size: 1.5;
   margin-bottom: 2rem;
 }
-.event-info {
+.maintenance-info {
   font-family: 'Termina Light', sans-serif;
   font-size: 1.2rem;
 }
@@ -338,6 +339,81 @@ section {
   text-align: left;
   font-size: 1rem;
   font-family: 'Termina Light', sans-serif;
+}
+.events {
+  background-image: url(../img/bg-4.jpg);
+  background-color: #641716;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center center;
+}
+.events-block {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  background-color: #171717;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 0 1rem #d54242;
+          box-shadow: 0 0 1rem #d54242;
+}
+.events-block h4 {
+  font-family: 'Termina Bold', sans-serif;
+}
+.events-block img {
+  width: 100%;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 0.5rem #cf2e2e;
+          box-shadow: 0 0 0.5rem #cf2e2e;
+}
+.events-tag {
+  margin: 1rem 0;
+  display: inline-block;
+  font-family: 'Termina Bold', sans-serif;
+  font-size: 1.3rem;
+}
+.events-info {
+  margin: 0 0 2rem 0;
+  font-family: 'Termina Light', sans-serif;
+}
+.events-button {
+  font-family: 'Termina Light', sans-serif;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #cf2e2e;
+  color: #e0e0e0;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.events-button::after {
+  width: 100%;
+  background-color: #e0e0e0;
+  content: '';
+  display: block;
+  height: 1px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+.events-button:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+.events-button:hover {
+  background-color: #ba2929;
+  color: #d3d3d3;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-shadow: 0 0 0.5rem #cc302e;
+          box-shadow: 0 0 0.5rem #cc302e;
 }
 /* Media */
 @media (max-width: 575px) {

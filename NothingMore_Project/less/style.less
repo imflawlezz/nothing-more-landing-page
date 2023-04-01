@@ -218,6 +218,7 @@ section{
 	background-color: lighten(@bg, 5%);
 	background-blend-mode: multiply;
 	background-size: cover;
+	background-position: center center;
 	border-radius: 0;
 	border: 1px solid @icons-color;
 	box-shadow: 0 0 2rem darken(@text-color, 20%);
@@ -240,8 +241,8 @@ section{
 .btn-close{
 	background-color: @text-color;
 }
-/* Event info */
-.event{
+/* Maintenance info */
+.maintenance{
 	text-align: left;
 	display: inline-block;
 	&-header{
@@ -337,6 +338,71 @@ section{
 		font-size: 1rem;
 		.lt_f();
 	}
+}
+.events{
+	background-image: url(../img/bg-4.jpg);
+	background-color: darken(@text-color, 30%);
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center center;
+	&-block{
+		display: inline-block;
+		margin: 0.5rem 1rem;
+		background-color: @bg;
+		padding: 2rem;
+		border-radius: 1.5rem;
+		box-shadow: 0 0 1rem lighten(@icons-color, 5%);
+		h4{
+			.bd_f();
+		}
+		img{
+			width: 100%;
+			border-radius: 1rem;
+			box-shadow: 0 0 0.5rem @icons-color;
+		}
+	}
+	&-tag{
+		margin: 1rem 0;
+		display: inline-block;
+		.bd_f();
+		font-size: 1.3rem;
+	}
+	&-info{
+		margin: 0 0 2rem 0;
+		.lt_f();
+	}
+	&-button{
+		.lt_f();
+		display: inline-block;
+		padding: 1rem 2rem;
+		background-color: @icons-color;
+		color: @light;
+		text-align: center;
+		font-size: 1rem;
+		letter-spacing: 1px;
+		text-decoration: none;
+		&::after{
+			width: 100%;
+			background-color: @light;
+			content: '';
+			display: block;
+			height: 1px;
+			transform: scaleX(0);
+			transform-origin: bottom left;
+			transition: transform 0.4s ease-in-out;
+		}
+		&:hover::after{
+				transform: scaleX(1.0);
+				transform-origin: bottom left;
+		}
+		&:hover{
+			background-color: darken(@icons-color, 5%);
+			color: darken(@light, 5%);
+			transition-duration: @hover-time;
+			box-shadow: 0 0 0.5rem darken(@text-color, 5%);
+		}
+	}
+
 }
 /* Media */
 @media (max-width: 575px){ //xs
