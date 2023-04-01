@@ -206,9 +206,14 @@ section {
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
+  -webkit-box-shadow: 0 0 0.5rem #d4413f;
+          box-shadow: 0 0 0.5rem #d4413f;
 }
 .preorder_link:hover {
   color: #d4413f;
+  text-shadow: 0 0 0.3rem #d4413f;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 /* Modal window */
 .modal-content {
