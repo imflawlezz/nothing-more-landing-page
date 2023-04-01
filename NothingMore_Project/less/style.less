@@ -206,9 +206,12 @@ section{
 		&:hover::after{
 			transform: scaleX(1.0);
 			transform-origin: bottom left;
+			box-shadow: 0 0 0.5rem @text-color;
 		}
 		&:hover{
 			color: @text-color;
+			text-shadow: 0 0 0.3rem @text-color;
+			transition-duration: @hover-time;
 		}
 }
 /* Modal window */
