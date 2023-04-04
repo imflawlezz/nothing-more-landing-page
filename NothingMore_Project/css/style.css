@@ -23,6 +23,7 @@ a:focus {
   border: none;
   font-size: 1rem;
   word-spacing: 3px;
+  letter-spacing: 1px;
   background-color: #d4413f;
   color: #e0e0e0;
 }
@@ -347,19 +348,17 @@ section {
 }
 .events {
   background-image: url(../img/bg-4.jpg);
-  background-color: #641716;
+  background-color: #471110;
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center center;
 }
 .events-block {
   display: inline-block;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 1rem 3rem 0.5rem;
   background-color: #171717;
   padding: 2rem;
   border-radius: 1.5rem;
-  -webkit-box-shadow: 0 0 1rem #d54242;
-          box-shadow: 0 0 1rem #d54242;
 }
 .events-block h4 {
   font-family: 'Termina Bold', sans-serif;
@@ -367,8 +366,8 @@ section {
 .events-block img {
   width: 100%;
   border-radius: 1rem;
-  -webkit-box-shadow: 0 0 0.2rem #cf2e2e;
-          box-shadow: 0 0 0.2rem #cf2e2e;
+  -webkit-box-shadow: 0 0 0.5rem #cf2e2e;
+          box-shadow: 0 0 0.5rem #cf2e2e;
 }
 .events-tag {
   margin: 1rem 0;
